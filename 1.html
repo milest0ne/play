@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>동전던지기</title>
+    <style>
+      input {
+        margin: 20px;
+        padding: 20px;
+      }
+      .result {
+        margin:45px;
+        font-size: 30px;
+      }
+    </style>
+    <script>
+      function plusOne(side){
+        var pre_val=Number(document.getElementById(side).innerHTML);
+        document.getElementById(side).innerHTML = pre_val + 1;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align:center">동전던지기</h1>
+    <div style="text-align:center">
+      <input type="button" value="앞면" onclick="plusOne('forward');">
+      <input type="button" value="뒷면" onclick="plusOne('backward');"><br>
+      <span id="forward" class="result">0</span>
+      <span id="backward" class="result">0</span>
+    </div>
+  </body>
+</html>
